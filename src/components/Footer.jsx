@@ -27,7 +27,6 @@ const Footer = () => {
   // --- UPDATED: Replaced Twitter with Email ---
   const socials = [
     { label: "GitHub", link: "https://github.com/AneekaSA", icon: <GitHubIcon /> },
-    { label: "LinkedIn", link: "https://www.linkedin.com/in/aneeka-sa/", icon: <LinkedInIcon /> },
     { label: "Email", link: "mailto:aneeka.sa@gmail.com", icon: <EmailIcon /> }, 
   ];
 
