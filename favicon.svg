@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Background gradient: dark teal to dark blue -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#023a3f;" />
+      <stop offset="100%" style="stop-color:#011d1f;" />
+    </linearGradient>
+    
+    <!-- Text gradient: bright cyan -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;" />
+      <stop offset="100%" style="stop-color:#00e0ff;" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+    </filter>
+  </defs>
+
+  <!-- Glass container (changed from rect to circle) -->
+  <circle 
+    cx="50" cy="50" 
+    r="48" 
+    fill="url(#bg-grad)" 
+    stroke="rgba(255, 255, 255, 0.15)" 
+    stroke-width="2"
+  />
+
+  <!-- The "A" (Glow Layer) - Blurred, slightly larger -->
+  <text 
+    x="50%" 
+    y="50%" 
+    fill="#00ffff" 
+    font-size="62" 
+    font-family="Arial, Helvetica, sans-serif" 
+    font-weight="bold" 
+    text-anchor="middle" 
+    dominant-baseline="central"
+    dy=".05em"
+    filter="url(#neon-glow)"
+    opacity="0.8"
+  >
+    A
+  </text>
+
+  <!-- The "A" (Top Layer) - Sharp, gradient fill -->
+  <text 
+    x="50%" 
+    y="50%" 
+    fill="url(#text-grad)" 
+    font-size="62" 
+    font-family="Arial, Helvetica, sans-serif" 
+    font-weight="bold" 
+    text-anchor="middle" 
+    dominant-baseline="central"
+    dy=".05em"
+  >
+    A
+  </text>
+</svg>
