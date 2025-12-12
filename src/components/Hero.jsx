@@ -70,7 +70,7 @@ return (
           variants={buttonsVariants}
         >
          <a
-  href="https://drive.google.com/file/d/18yH2EO7me7dWTyNqDGD3MX8Iot7drwhk/view?usp=drive_link"
+  href="https://drive.google.com/file/d/1eTFXLZ2rXVt0IYlHAKf7k7ticVJRacEw/view"
   target="blank"
   download
   className="

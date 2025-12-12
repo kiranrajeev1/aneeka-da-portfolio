@@ -29,11 +29,11 @@ const useMediaQuery = (query) => {
 
 const experiences = [
   {
-    role: "Cloud DevOps Trainee",
+    role: "Data and Cloud Analysis Training & Internship ",
     company: "Cloudnets Solutions",
     period: "Jan 2025 – Present",
     description:
-      "Gained hands-on experience with AWS and DevOps tools, focusing on building scalable cloud infrastructure and CI/CD pipelines.",
+      "Gained hands-on experience in data analysis workflows, SQL querying, Power BI dashboards, and applying cloud tools (AWS) to support scalable data processing and automation.",
     icon: <FaAws className="text-cyan-400 text-lg" />,
   },
   {

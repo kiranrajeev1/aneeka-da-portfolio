@@ -38,13 +38,16 @@ const About = () => {
           About Me
         </h2>
         <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
-          I’m Aneeka, a B.Tech Computer Science graduate with a strong foundation in DevOps, Cloud (AWS), Orchestration, and Linux systems. I enjoy understanding how things work under the hood — from containers to infrastructure automation — and applying that knowledge to build efficient, reliable solutions.
+          I’m Aneeka, a B.Tech Computer Science graduate and a Data Analyst with a strong foundation in SQL, Python, Power BI, Excel, and cloud-based analytics on AWS. I specialize in transforming messy, unstructured data into clean, insightful, and decision-ready intelligence that helps businesses understand performance, spot trends, and make confident choices.
         </p>
         <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
-          Before transitioning into tech, I worked for several years as a freelance content writer, creating clear, engaging, and SEO-optimized content across various domains — an experience that strengthened my communication skills and attention to detail.
+          What drives me as a Data Analyst is the process of digging into data to uncover patterns, solve real problems, and tell clear, meaningful stories through dashboards and reports. I enjoy exploring how data behaves, why certain trends appear, and how those insights can translate into better business outcomes.
         </p>
         <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
-          I’m currently focused on mastering infrastructure automation and scalable deployments, aiming to combine technical depth with problem-solving that delivers real business impact. I believe in learning by doing, and every project I take on reflects that mindset.        </p>       
+          Before transitioning into analytics, I worked for several years as a freelance content writer, where I developed strong communication, attention to detail, and storytelling skills — strengths that now help me present data in a way that is simple, logical, and impactful for stakeholders.
+        </p>
+        <p className="text-sm md:text-xl text-gray-200 leading-relaxed">
+          I’m currently focused on mastering cloud analytics, automated reporting, and scalable data workflows, aiming to blend technical skill with business understanding. I believe in learning by doing, and every project I take on reflects that — from shaping raw data into meaningful insights to building dashboards that drive real results.        </p>
       </div>
     </motion.section>
   );

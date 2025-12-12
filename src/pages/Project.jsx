@@ -5,38 +5,37 @@ import { useInView } from "react-intersection-observer";
 import { Github, ChevronLeft, ChevronRight } from "lucide-react";
 
 const projects = [
-    {
-        title: "MERN Stack Movie App",
+
+     {
+        title: "Retail Sales & Inventory Analysis Dashboard",
         description:
-            "A full-stack MERN application for personalized movie recommendations, featuring a complete DevSecOps workflow for secure, automated, and observable deployment on AWS EKS.",
+            "Developed a Retail Sales & Inventory dashboard that identified revenue drivers, product performance patterns, and demand trends using Python, Excel, and Power BI.",
         techStack: [
-            "AWS EKS", "Kubernetes", "Docker", "GitHub Actions", "ArgoCD", "Helm", "Prometheus", "Grafana", "SonarQube", "Trivy",
+            "Python", "Pandas", "Excel", "Power BI", "Data Visualization", "ETL"
         ],
         image:
-            "https://images.unsplash.com/photo-1574267432553-4b4628081c31?auto=format&fit=crop&w=1470&q=80",
-        link: "https://github.com/AneekaSA/MERN-MovieApp-3-Tier.git",
+            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        title: "DevSecOps Chat App",
-        description:
-            "A real-time chat application showcasing a complete DevSecOps workflow, from containerization to deployment, security scanning, and monitoring on AWS EKS.",
-        techStack: [
-            "AWS EKS", "Kubernetes", "Jenkins", "Docker", "ArgoCD", "Helm", "Prometheus", "Grafana", "SonarQube", "Trivy", "OWASP",
-        ],
-        image:
-            "https://images.unsplash.com/photo-1534794048419-48e110dca88e?auto=format&fit=crop&w=1470&q=80",
-        link: "https://github.com/AneekaSA/DevSecOps-chat-app.git",
-    },
+    title: "Movie Recommendation App – Behavioral Analytics & KPI Insights",
+    description:
+        "Analyzed user engagement patterns, viewing behavior, and preference trends to derive actionable KPIs for optimizing recommendation accuracy and platform performance.",
+    techStack: [
+        "Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Data Analytics", "KPI Analysis"
+    ],
+    image:
+        "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=1470&q=80",
+    },   
+
     {
-        title: "AWS Cloud Native DevOps",
+        title: "Real-Time Chat Application – Cloud Data Analytics, User Insights & Observability (Chatty)",
         description:
-            "A Node.js project showcasing AWS-native DevOps, focusing on automated CI/CD with CodePipeline, IaC with Terraform, and scalable EKS deployments.",
+            "Designed an end-to-end analytics and observability framework to measure user behavior, interaction patterns, message flow efficiency, and system performance across a cloud-native chat platform.",
         techStack: [
-            "AWS EKS", "CodePipeline", "CodeBuild", "Terraform", "Ansible", "Docker", "Kubernetes", "CloudWatch",
+            "AWS", "Kubernetes", "Prometheus", "Grafana", "ELK Stack", "Python", "Stream Processing", "Data Analytics", "Observability"
         ],
         image:
-            "https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&w=1470&q=80",
-        link: "https://github.com/AneekaSA/NodeOps.git",
+            "https://plus.unsplash.com/premium_photo-1681487683141-e72c5ccd94e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
         title: "Wanderlust Travel Application",
@@ -47,24 +46,19 @@ const projects = [
         ],
         image:
             "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1470&q=80",
-        link: "https://github.com/AneekaSA/Wanderlust-Mega-Project.git",
     },
     {
-    title: "AWS Security Automation Platform",
-    description:
-        "Developed a Flask-based AWS Security Automation Platform that automated CloudFormation updates, subnet/routing modifications, ChangeSet operations, and infrastructure imports using Boto3 and JSON processing.",
-    techStack: [
-        "AWS CloudFormation",
-        "Boto3",
-        "Python Flask",
-        "REST APIs",
-        "AWS Networking",
-        "JSON Automation"
-    ],
-    image:
-        "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://github.com/your-repo-link-here"
+        title: "AWS Cloud Intelligence Analyzer",
+        description:
+            "Designed a Python automation workflow to convert AWS configuration data into analyzable datasets, enabling trend analysis, auditing insights, cost visibility, and data-driven decision-making.",
+        techStack: [
+            "AWS", "Python", "Boto3", "Pandas", "Data Engineering", "Automation", "Cloud Audit", "Cost Analysis"
+        ],
+        image:
+            "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     }
+
+
 
 ];
 
@@ -239,7 +233,7 @@ const Projects = () => {
                                     <p className="text-gray-300 text-sm md:text-base mb-4">
                                         {project.description}
                                     </p>
-                                    
+                                    <div className="w-full h-px bg-white/30 my-4 rounded"></div>
                                     {project.techStack && (
                                         <div className="flex flex-wrap gap-2">
                                             {project.techStack.map((tech) => (
@@ -252,16 +246,7 @@ const Projects = () => {
                                             ))}
                                         </div>
                                     )}
-                                    <div className="w-full h-px bg-white/30 my-4 rounded"></div>
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-4 inline-flex items-center gap-2 text-white hover:text-cyan-200 "
-                                    >
-                                        <Github size={18} />
-                                        View Source
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </motion.div>
